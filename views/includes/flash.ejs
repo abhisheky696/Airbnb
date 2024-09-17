@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<% if(success && success.length) { %>
+    <script>
+        Toastify({
+            text: "<%= success %>",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right, #4CAF50, #8BC34A)", // Green shades for success
+            },
+            duration: 3000,
+            gravity: "top",
+            position: "center",
+        }).showToast();
+    </script>
+<% } %>
+
+<% if(error && error.length) { %>
+    <script>
+        Toastify({
+            text: "<%= error %>",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right, #f44336, #e57373)", // Red shades for error
+            },
+            duration: 3000,
+            gravity: "top",
+            position: "center",
+        }).showToast();
+    </script>
+<% } %>

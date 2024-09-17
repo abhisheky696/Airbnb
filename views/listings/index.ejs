@@ -1,0 +1,220 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        width: 110%;
+        height: 100px;
+        padding-top: 3px;
+        height: fit-content;
+        width: 95%;
+        background-color: white;
+    }
+    .nav-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        width: calc(100% - 60px);
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        z-index: 100;
+        background-color: white;
+        width: 100%;
+        position: sticky;
+        top: 100px;
+        z-index: 10;
+    }
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        white-space: nowrap;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tax-options {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-bottom: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .form-switch {
+        cursor: pointer;
+    }
+
+    .tax-options:hover {
+        background-color: #dddddd;
+    }
+
+    .gst {
+        display: none;
+    }
+
+    .nav-btn {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .card-img-top {
+        border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+        .menu-container {
+            flex-direction: column;
+            gap: 0;
+        }
+        .menu {
+            position: fixed;
+            top: 55px;
+            padding-top: 5px;
+        }
+        .tax-options {
+            margin-top: 50px;
+            background-color: white;
+            position: sticky;
+            top: 0;
+        }
+        .card-img-top {
+            border-radius: 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="menu-container">
+        <div class="menu">
+            <a href="/listings/filter/Trending">
+                <div class="menu-item">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                    <span>Trending</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Amazing pools">
+                <div class="menu-item">
+                    <i class="fa-solid fa-person-swimming"></i>
+                    <span>Amazing pools</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Rooms">
+                <div class="menu-item">
+                    <i class="fa-solid fa-person-booth"></i>
+                    <span>Rooms</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Amazing views">
+                <div class="menu-item">
+                    <i class="fa-solid fa-street-view"></i>
+                    <span>Amazing views</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Farms">
+                <div class="menu-item">
+                    <i class="fa-solid fa-tractor"></i>
+                    <span>Farms</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Lakefronts">
+                <div class="menu-item">
+                    <i class="fa-solid fa-water"></i>
+                    <span>Lakefronts</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Cabins">
+                <div class="menu-item">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Cabins</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Beachfront">
+                <div class="menu-item">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Beachfront</span>
+                </div>
+            </a>
+            <a href="/listings/filter/Tropical">
+                <div class="menu-item">
+                    <i class="fa-solid fa-hurricane"></i>
+                    <span>Tropical</span>
+                </div>
+            </a>
+        </div>
+        <div class="tax-options">
+            <div class="form-check-reverse form-switch">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Display total after taxes</label
+                >
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(let listing of allListings) { %>
+        <a class="anchor-tag" href="/listings/<%=listing._id%>">
+            <div class="card col box-container">
+                <img
+                    src="<%=listing.image.url%>"
+                    class="card-img-top"
+                    alt="listing_image"
+                />
+                <div class="card-body">
+                    <h5 class="card-title"><%=listing.title%></h5>
+                    <p class="card-text">
+                        &#8377;<span class="price"
+                            ><%=listing.price.toLocaleString("en-IN")%></span
+                        >/night<br />
+                        <span class="gst"
+                            >&#8377;<%=(listing.price*1.18).toLocaleString("en-IN")%>+18%
+                            GST included</span
+                        >
+                    </p>
+                </div>
+            </div>
+        </a>
+        <% } %>
+    </div>
+</body>
+
+<script>
+    const taxOptions = document.querySelector("#flexSwitchCheckDefault");
+    const gsts = document.querySelectorAll(".gst");
+    taxOptions.addEventListener("click", () => {
+        for (let gst of gsts) {
+            if (gst.style.display === "inline") {
+                gst.style.display = "none";
+            } else {
+                gst.style.display = "inline";
+            }
+        }
+    });
+</script>

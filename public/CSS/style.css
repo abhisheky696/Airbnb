@@ -1,0 +1,66 @@
+body {
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+footer {
+    margin-top:auto;
+}
+.navbar {
+    background-color: white;
+}
+.navbar-nav a {
+    font-size:1.16rem;
+    font-weight: 400;
+}
+.fa-regular {
+    color:red;
+    font-size:2rem;
+}
+.footer {
+    background-color: rgb(237, 233, 233);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem; 
+    padding:1rem;
+}
+.f-social i {
+    font-size: 1.25rem;
+    color:black;
+    margin-right: 1rem;
+}
+.f-links a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.f-links a:hover {
+    text-decoration: underline;
+}
+
+/* cards */
+.card {
+    margin-bottom:2rem;
+    border:none !important;
+}
+.card-img-top {
+    height:20rem !important;
+    width:100% !important;
+    border-radius:1rem;
+    object-position: cover;
+}
+
+.card-body {
+    padding:0 !important;
+}
+.anchor-tag {
+    text-decoration: none;
+}
+
+/*styling review card */
+.review-card {
+    border:1px solid black !important;
+    background-color: #dfdf81 !important;
+}

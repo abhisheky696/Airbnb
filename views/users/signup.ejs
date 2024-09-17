@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+  @media(max-width:768px) {
+    .signup-form {
+      width:100%;
+      margin-left: 1%;
+      white-space: nowrap;
+    }
+  }
+</style>
+<body>
+    <div class="signup-form col-6 offset-3 mb-3">
+      <h1>Welcome to Airbnb</h1>
+        <form action="/signup" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="username" id="username" class="form-label">Username</label>
+            <input type="username" name="username" class="form-control" required>
+            <div class="valid-feedback">
+              looks good
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" id="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" id="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <button class="btn btn-success mb-3">submit</button>
+        </form>
+      </div>
+</body>

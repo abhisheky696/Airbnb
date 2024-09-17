@@ -1,0 +1,48 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+  .google-login {
+    font-size:25px;
+    border:1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor:pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .google-login {
+    background-color: rgb(231, 227, 227);
+  }
+  @media(max-width:768px) {
+    .login-form {
+      width:100%;
+      margin-left:1%;
+      white-space: nowrap;
+    }
+    .google-login {
+      white-space: nowrap;
+      width:fit-content
+    }
+  }
+</style>
+<body>
+  <div class="google-login col-4 offset-3 mx-auto">
+    <img width="30" src="https://banner2.cleanpng.com/20180324/sww/av07pl17u.webp"/>
+    <div class="mx-auto">Continue with google</div>
+  </div>
+    <div class="login-form col-6 offset-3 mb-3">
+      <h1>Welcome to Airbnb</h1>
+        <form action="/login" method="POST" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="username" id="username" class="form-label">Username</label>
+            <input type="username" name="username" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" id="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <button class="btn btn-success mb-3">Login</button>
+        </form>
+      </div>
+</body>

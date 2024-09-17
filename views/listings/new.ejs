@@ -1,0 +1,75 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+  @media(max-width:768px) {
+    .new-form {
+      width:fit-content;
+      margin-left: 1%;
+      white-space: nowrap;
+    }
+  }
+</style>
+<body>
+    <div class="new-form col-6 offset-2 mb-3">
+      <form action="/listings" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+        <h3>Add new Listings</h3>
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" placeholder="enter title for your place" name="listing[title]" class="form-control" required>
+          <div class="valid-feedback">
+            looks good
+          </div>
+          <div class="invalid-feedback">
+            please enter valid title
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="title" class="form-label">Description</label>
+          <input type="text" placeholder="enter description" name="listing[description]" class="form-control" required>
+          <div class="invalid-feedback">
+            description should be valid
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="category" class="form-label">Category</label>
+          <select class="form-control" name="listing[category]" id="cateory">
+            <option value="1">Choose Category</option>
+            <option value="2">Trending</option>
+            <option value="3">Tropicals</option>
+            <option value="4">Amazing Pool</option>
+            <option value="5">Amazing Views</option>
+            <option value="6">Farms</option>
+            <option value="7">Rooms</option>
+            <option value="8">Lakefronts</option>
+            <option value="9">Cabins</option>
+            <option value="10">Beachfronts</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="title" class="form-label">Upload Image</label>
+          <input type="file" name="listing[image]" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="title" class="form-label">Price</label>
+          <input type="text" placeholder="enter price in rupees" name="listing[price]" class="form-control" required>
+          <div class="invalid-feedback">
+            price should be valid
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="title" class="form-label">Location</label>
+          <input type="text" placeholder="enter the location" name="listing[location]" class="form-control" required>
+          <div class="invalid-feedback">
+            location should be valid
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="title" class="form-label">Country</label>
+          <input type="text" placeholder="enter country" name="listing[country]" class="form-control" required>
+          <div class="invalid-feedback">
+            country name should be valid
+          </div>
+        </div>
+        <button class="btn btn-success mb-3">Submit</button>
+      </form>
+    </div>
+</body>
