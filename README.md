@@ -1,18 +1,14 @@
 # Airbnb Clone
 
 ## 🏡 Project Overview
-This is an **Airbnb Clone** built using **EJS, Node.js, Express, MongoDB, and Passport.js**. The project allows users to sign up, log in, and manage rental listings. It does not include payment integration, a booking module, or a user dashboard.
+This is an **Airbnb Clone** built using **EJS, Node.js, Express, MongoDB, and Passport.js**. The project allows users to sign up, log in, and manage rental listings.
 
 ## 🚀 Features
 - User authentication using **Passport.js**
 - Listing creation and management
 - Responsive UI with **EJS templates**
 - Database management using **MongoDB**
-- Secure password storage with **bcrypt**
 - Image uploads with **Multer and Cloudinary**
-
-## 📸 Screenshots
-(Include relevant screenshots here)
 
 ## 🛠 Tech Stack
 - **Frontend:** EJS, HTML, CSS, Bootstrap
@@ -47,7 +43,7 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ### 4️⃣ Start the Server
 ```sh
-npm start
+node index.js
 ```
 
 The project will be available at `http://localhost:3000`
@@ -72,4 +68,4 @@ This project is licensed under the **MIT License**.
 ## 📬 Contact
 For any queries, feel free to reach out:
 📧 **Email:** ay1878760@gmail.com  
-🔗 **GitHub:** [abhisheky696](https://github.com/abhisheky696)
+🔗 **GitHub:** (https://github.com/abhisheky696)
