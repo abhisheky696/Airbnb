@@ -1,5 +1,22 @@
 <% layout("/layouts/boilerplate") %>
 <style>
+   .google-login {
+    font-size:25px;
+    border:1px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor:pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .google-login {
+    background-color: rgb(231, 227, 227);
+    margin-top: 30px;
+    margin-bottom:30px;
+  }
   @media(max-width:768px) {
     .signup-form {
       width:100%;
@@ -9,8 +26,12 @@
   }
 </style>
 <body>
+  <!-- <div class="google-login col-4 offset-3 mx-auto">
+    <img width="30" src="https://banner2.cleanpng.com/20180324/sww/av07pl17u.webp"/>
+    <div class="mx-auto">Continue with google</div>
+  </div> -->
     <div class="signup-form col-6 offset-3 mb-3">
-      <h1>Welcome to Airbnb</h1>
+      <h1>Welcome to StayHere</h1>
         <form action="/signup" method="POST" class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="username" id="username" class="form-label">Username</label>

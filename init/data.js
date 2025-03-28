@@ -3,14 +3,14 @@ let sampleListings = [
     "title": "Modern Apartment",
     "description": "A beautiful modern apartment in the city center.",
     "image": {
-      "url": "https://avatars.mds.yandex.net/i?id=9bd24635a57ba35dfab1de3fa06aca8125141ea7-12261047-images-thumbs&n=13",
+      "url": "https://avatars.mds.yandex.net/i?id=7f3d935795b6894c887d5582ab51414b8f1ff306-12630875-images-thumbs&n=13",
       "filename": "lisitngimage"
     },
     "price": 1200,
     "location": "New York, NY",
     "country": "USA",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Cozy Cottage",
@@ -23,7 +23,7 @@ let sampleListings = [
     "location": "Lake District",
     "country": "UK",
     "category": "Rooms",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Luxury Villa",
@@ -36,7 +36,7 @@ let sampleListings = [
     "location": "Malibu, CA",
     "country": "USA",
     "category": "Amazing pools",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Downtown Loft",
@@ -49,20 +49,20 @@ let sampleListings = [
     "location": "San Francisco, CA",
     "country": "USA",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Beachfront House",
     "description": "A beautiful house right on the beach.",
     "image": {
-      "url": "https://avatars.mds.yandex.net/i?id=5bf957cc3dc82a39fc748094f9ab7a9418ef8a34-5233584-images-thumbs&n=13",
+      "url": "https://avatars.mds.yandex.net/i?id=4ee27d67ecdc09c0b4129afc6cb6e10365bcdc38-8496972-images-thumbs&n=13",
       "filename": "lisitngimage"
     },
     "price": 2000,
     "location": "Miami, FL",
     "country": "USA",
     "category": "Beachfront",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Mountain Cabin",
@@ -75,7 +75,7 @@ let sampleListings = [
     "location": "Aspen, CO",
     "country": "USA",
     "category": "Cabins",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "City Studio",
@@ -88,7 +88,7 @@ let sampleListings = [
     "location": "Tokyo",
     "country": "Japan",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Suburban Home",
@@ -101,7 +101,7 @@ let sampleListings = [
     "location": "Chicago, IL",
     "country": "USA",
     "category": "Rooms",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Historic Townhouse",
@@ -114,7 +114,7 @@ let sampleListings = [
     "location": "Boston, MA",
     "country": "USA",
     "category": "Rooms",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Penthouse Suite",
@@ -127,7 +127,7 @@ let sampleListings = [
     "location": "Dubai",
     "country": "UAE",
     "category": "Amazing views",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Rural Farmhouse",
@@ -140,7 +140,7 @@ let sampleListings = [
     "location": "Tuscany",
     "country": "Italy",
     "category": "Farms",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Seaside Cottage",
@@ -153,20 +153,20 @@ let sampleListings = [
     "location": "Cornwall",
     "country": "UK",
     "category": "Lakefronts",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Urban Flat",
     "description": "A modern flat in an urban area.",
     "image": {
-      "url": "https://avatars.mds.yandex.net/i?id=308ce26ef8e3d9c4f279cf4b18565779fb77334f-4855100-images-thumbs&n=13",
+      "url": "https://avatars.mds.yandex.net/i?id=2b4777dd15ef862ffcf5ede62cd71094f9ea22be-4078450-images-thumbs&n=13",
       "filename": "lisitngimage"
     },
     "price": 1100,
     "location": "Berlin",
     "country": "Germany",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Country Manor",
@@ -179,7 +179,7 @@ let sampleListings = [
     "location": "Cotswolds",
     "country": "UK",
     "category": "Rooms",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Tropical Bungalow",
@@ -192,7 +192,7 @@ let sampleListings = [
     "location": "Bali",
     "country": "Indonesia",
     "category": "Tropical",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "City Penthouse",
@@ -205,7 +205,7 @@ let sampleListings = [
     "location": "New York, NY",
     "country": "USA",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Desert Villa",
@@ -218,7 +218,7 @@ let sampleListings = [
     "location": "Scottsdale, AZ",
     "country": "USA",
     "category": "Trending",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   },
   {
     "title": "Island Retreat",
@@ -231,7 +231,7 @@ let sampleListings = [
     "location": "Fiji",
     "country": "Fiji",
     "category": "Tropical",
-    "owner": "66b621ea9cd6764b0f9165fa"
+    "owner": "674870c7a88d27f0a24f35fa"
   }
 ];
 
