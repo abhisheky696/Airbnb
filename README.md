@@ -62,8 +62,6 @@ Contributions are welcome! Follow these steps:
 4. Push to your branch (`git push origin feature-xyz`)
 5. Open a Pull Request
 
-## 📄 License
-This project is licensed under the **MIT License**.
 
 ## 📬 Contact
 For any queries, feel free to reach out:
