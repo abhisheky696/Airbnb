@@ -24,6 +24,7 @@ const store = MongoStore.create({
     crypto: {
         secret: "squirreladada",
     },
+    touchAfter:24*3600,
 });
 
 main()
