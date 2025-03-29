@@ -1,4 +1,4 @@
-# Airbnb Clone
+# StayHere
 
 ## 🏡 Project Overview
 This is an **Airbnb Clone** built using **EJS, Node.js, Express, MongoDB, and Passport.js**. The project allows users to sign up, log in, and manage rental listings.
