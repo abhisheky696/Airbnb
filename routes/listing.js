@@ -20,7 +20,6 @@ const validateListing = (req, res, next) => {
 router.get("/filter/:id", wrapAsync(listingController.filter));
 router.get("/search", wrapAsync(listingController.search));
 
-
 router.get("/new", isUserLoggedIn, listingController.renderNewForm);
 
 router
