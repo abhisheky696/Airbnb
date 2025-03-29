@@ -19,7 +19,8 @@ const listingsRouter = require("./routes/listing.js");
 const reviewsRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
 const db_url = process.env.ATLAS_DB_URL;
-const helmet = require('helmet')
+// const helmet = require('helmet')
+const cors = require('cors')
 const store = MongoStore.create({
     mongoUrl: db_url,
     crypto: {
@@ -41,7 +42,8 @@ async function main() {
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
-app.use(helmet());
+app.use(cors())
+// app.use(helmet());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
